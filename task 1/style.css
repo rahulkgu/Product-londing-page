@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+/* font-family: 'Nunito', sans-serif; */
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar #close {
+    display: none;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #b3ad7f;
+}
+
+.header #menu {
+    display: none;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #2a201c;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+.home .content .tittle {
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home .content .tittle span {
+    text-transform: uppercase;
+    color: #b3ad7f;
+}
+
+.home .content .description {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #b3ad7f;
+    cursor: pointer;
+}
+
+.home .content .btn:hover {
+    letter-spacing: .2rem;
+}
+
+.fa-solid {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .home {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:460px) {
+    * {
+        padding: 0;
+    }
+    .move {
+        margin: auto;
+    }
+    .header .navbar .active {
+        right: 0;
+    }
+    .header #menu {
+        display: none;
+        margin-right: 5rem;
+    }
+}
